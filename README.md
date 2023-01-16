@@ -37,5 +37,5 @@ The application will start a development server and open in the browser. You can
 
 
 ## A screenshot of the application
-![A screenshot of the application](/Users/selbizakaria/Desktop/0.png)
-![A screenshot of the application](/Users/selbizakaria/Desktop/1.png)
+![A screenshot of the application](docs/screenshot00.png))
+![A screenshot of the application](docs/screenshot01.png))
