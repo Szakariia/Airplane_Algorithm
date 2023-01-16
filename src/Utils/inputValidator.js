@@ -3,7 +3,7 @@ function checkArrayNumbers(input) {
     let arr = input.match(regex);
     for (let i = 0; i < arr.length; i++){ // check limit [row,col]
         if (!(i % 2) && Number(arr[i]) > 5 ) return ""
-        if ((i % 2) && Number(arr[i]) > 100 )  return ""}
+        if ((i % 2) && Number(arr[i]) > 50 )  return ""}
     return arr
 }
 
