@@ -14,3 +14,22 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installation
 
 1. Clone the repository:
+
+- git clone https://github.com/username/AirplaneSeatingAlgorithm.git
+
+2. Navigate to the project directory:
+
+- cd AirplaneSeatingAlgorithm
+
+3. Install the required packages:
+
+npm install
+
+4. Start the development server:
+
+npm start
+
+
+## Usage
+
+The application will start a development server and open in the browser. You can test the algorithm by inputting the number of rows and seats per row for the airplane, and then assigning passengers to seats.
