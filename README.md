@@ -15,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repository:
 
-- git clone
+- git clone https://github.com/Szakariia/Airplane_Algorithm.git
 
 2. Navigate to the project directory:
 
