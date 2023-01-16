@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MdChair } from "react-icons/md"
 function Draw({Obj, Arr3D}){
 

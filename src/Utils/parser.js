@@ -22,7 +22,6 @@ function beZeroArr3D(Seats) {
 
 // get last arr index including middle condition
 function GetLastArr(dataObj) { 
-    let k = 0;
     let index = 0
 
     for (let k = 0; k < dataObj.arr.length; k++)
@@ -55,8 +54,8 @@ function seatMiddle(dataObj) {
             i++
         }
         k++
-        if (k == dataObj.arr.length && dataObj.Passengers && dataObj.arr &&
-            dataObj.arr[lastArr][dataObj.arr[lastArr].length - 1][lastChar - 1] == 0) k = 0 // check if still free place
+        if (k === dataObj.arr.length && dataObj.Passengers && dataObj.arr &&
+            dataObj.arr[lastArr][dataObj.arr[lastArr].length - 1][lastChar - 1] === 0) k = 0 // check if still free place
 
     }
     return dataObj;
@@ -71,21 +70,21 @@ function seatWindow(dataObj) {
     // 3D Array while
     while (k < dataObj.arr.length && dataObj.Passengers > 0){
         i = 0
-        while ((k == 0 || k == dataObj.arr.length - 1) && i < dataObj.arr[k].length) {
+        while ((k === 0 || k === dataObj.arr.length - 1) && i < dataObj.arr[k].length) {
             // First array
-            if (k == 0 && !dataObj.arr[k][i][0]) {
+            if (k === 0 && !dataObj.arr[k][i][0]) {
                 dataObj.arr[k][i][0] = (dataObj.seatPassengers += 1)
                 dataObj.Passengers--; break}
             // Last array
-            else if (k == dataObj.arr.length - 1 && !dataObj.arr[k][i][dataObj.arr[k][i].length - 1]){
+            else if (k === dataObj.arr.length - 1 && !dataObj.arr[k][i][dataObj.arr[k][i].length - 1]){
                 dataObj.arr[k][i][dataObj.arr[k][i].length - 1] = (dataObj.seatPassengers += 1)
                 dataObj.Passengers--; break}
             i++
         }
         k++
         console.log(" >>>>>>>>>> ", dataObj.arr[lastArr][dataObj.arr[lastArr].length - 1][lastChar],"<<<<<<<<<")
-        if (k == dataObj.arr.length && dataObj.Passengers 
-            && dataObj.arr[lastArr][dataObj.arr[lastArr].length - 1][lastChar] == 0) k = 0
+        if (k === dataObj.arr.length && dataObj.Passengers 
+            && dataObj.arr[lastArr][dataObj.arr[lastArr].length - 1][lastChar] === 0) k = 0
     }
     return dataObj;
 }
@@ -102,12 +101,12 @@ function seatAisle(dataObj) {
         i = 0
         while (i < dataObj.arr[k].length) {
             // First array
-            if (k == 0 && !dataObj.arr[k][i][dataObj.arr[k][i].length - 1]) {
+            if (k === 0 && !dataObj.arr[k][i][dataObj.arr[k][i].length - 1]) {
                 dataObj.arr[k][i][dataObj.arr[k][i].length - 1] = (dataObj.seatPassengers += 1)
                 dataObj.Passengers--;
                 break}
             // Last array
-            else if (k == dataObj.arr.length - 1 && !dataObj.arr[k][i][0]){
+            else if (k === dataObj.arr.length - 1 && !dataObj.arr[k][i][0]){
                 dataObj.arr[k][i][0] = (dataObj.seatPassengers += 1)
                 dataObj.Passengers--;
                 break}
@@ -123,8 +122,8 @@ function seatAisle(dataObj) {
             i++
         }
         k++
-        if (k == dataObj.arr.length && dataObj.Passengers && dataObj.arr 
-            && dataObj.arr[lastArr][dataObj.arr[lastArr].length - 1][0] == 0) k = 0 // check if still free place
+        if (k === dataObj.arr.length && dataObj.Passengers && dataObj.arr 
+            && dataObj.arr[lastArr][dataObj.arr[lastArr].length - 1][0] === 0) k = 0 // check if still free place
 
     }
     return dataObj;
