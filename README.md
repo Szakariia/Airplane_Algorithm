@@ -33,3 +33,9 @@ npm start
 ## Usage
 
 The application will start a development server and open in the browser. You can test the algorithm by inputting the number of rows and seats per row for the airplane, and then assigning passengers to seats.
+
+
+
+## A screenshot of the application
+![A screenshot of the application](/Users/selbizakaria/Desktop/0.png)
+![A screenshot of the application](/Users/selbizakaria/Desktop/1.png)
